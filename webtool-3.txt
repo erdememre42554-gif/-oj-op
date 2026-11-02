@@ -1,0 +1,529 @@
+# MASTER DESIGN & DEVELOPMENT DIRECTIVE — PROJECT 02
+
+## GÖREV: MEVCUT WEB SİTESİNİ BAŞTAN SONA PREMIUM EDITORIAL UTILITY EXPERIENCE OLARAK YENİDEN TASARLA
+
+Sana verilen mevcut web sitesi proje klasörünü incele.
+
+Bütün sayfaları, araçları, bileşenleri, içerikleri ve çalışan fonksiyonları analiz et.
+
+Ardından bütün web sitesini baştan sona yeniden tasarla ve gerçek proje dosyalarında uygula.
+
+Sadece tasarım önerisi, analiz, rapor veya statik prototip üretme.
+
+**Doğrudan uygulamaya başla.**
+
+Mevcut marka kimliğini, araç isimlerini, içerikleri, URL yapılarını ve işlevleri koru. Görsel deneyimi çok daha gelişmiş, özgün, premium ve etkileyici hale getir.
+
+---
+
+# 1. PROJENİN MEVCUT KARAKTERİ
+
+Bu proje, günlük işlerde kullanılan küçük ve pratik araçların bir araya geldiği bir utility platformudur.
+
+Mevcut araç aileleri:
+
+## Text araçları
+- Word & Character Counter
+- Case Converter
+- Remove Duplicate Lines
+- Whitespace & Text Cleaner
+- Sort Lines
+
+## Generator araçları
+- Password Generator
+- Passphrase Generator
+- QR Code Generator
+- QR Code Reader
+- Barcode Generator
+
+## Calculation araçları
+- Unit Converter
+- Percentage Calculator
+- Age Calculator
+- Date Difference Calculator
+- Time Duration Calculator
+- Discount Calculator
+- Tip & Bill Split Calculator
+- Compound Interest Calculator
+- Loan / EMI Calculator
+- Aspect Ratio Calculator
+
+Ayrıca:
+
+- Kategori sayfaları
+- All Tools
+- Popular
+- Training
+- Araçlara özel eğitim sayfaları
+- About
+- Methodology
+- How local processing works
+- Privacy
+- Legal Privacy
+- Legal Terms
+- Contact
+- Changelog
+- 404
+
+sayfaları bulunmaktadır.
+
+Bu ürünün temel amacı:
+
+Kullanıcıların küçük günlük işlemlerini hızlı, kolay, güvenli ve hesap oluşturmadan yapabilmesini sağlamaktır.
+
+Yeni tasarım bu basitliği kaybetmeden premium bir deneyim sunmalıdır.
+
+# 2. TASARIM KONSEPTİ
+
+Yeni görsel kimlik:
+
+PREMIUM EDITORIAL DESIGN + MODERN UTILITY EXPERIENCE + INTERACTIVE GEOMETRY
+
+Referans karakter:
+
+- Modern editorial web design
+- Architecture and measurement inspired layouts
+- Premium digital publishing
+- Minimal Swiss-inspired grid systems
+- Warm paper surfaces
+- Refined typography
+- Interactive mathematical visualizations
+
+Sıradan SaaS landing page üretme.
+
+Standart üçlü kart gruplarını bütün sayfalara kopyalama.
+
+Her bölümde aynı başlık, açıklama ve kart dizilimini kullanma.
+
+Geniş negatif alan, asimetrik kompozisyon, büyük tipografik alanlar ve özgün veri görselleri oluştur.
+
+Bu site kullanıcıya karmaşık bir yazılım kullanıyormuş hissi vermemeli.
+
+Basit araçları son derece kaliteli bir dijital ürün deneyimiyle sunmalı.
+
+# 3. GÖRSEL KİMLİK VE RENKLER
+
+Mevcut Solar Paper tasarım sistemini incele.
+
+Bu tasarımın karakterini geliştir ancak daha ileri bir görsel kaliteye taşı.
+
+Ana görsel dil:
+
+- Sıcak kırık beyaz.
+- Krem ve kâğıt tonları.
+- Mürekkep siyahı.
+- Yumuşak gri.
+- Kontrollü mavi.
+- Turuncu.
+- Sage yeşili.
+- Az miktarda sarı ve diğer işlevsel vurgular.
+
+Geniş koyu yüzeylerden ve neon renklerden kaçın.
+
+Aşırı gradient, cam efekti, yoğun gölge ve gereksiz yuvarlak kartlar kullanma.
+
+Renkler içerik ve işlevlere göre belirlenmeli.
+
+Örneğin:
+
+- Hesaplama sonuçları için belirgin veri vurguları.
+- Pozitif ve negatif değişimler için fonksiyonel renkler.
+- Formlarda net focus durumları.
+- Grafiklerde okunabilir ve birbirinden ayrılan veri serileri.
+
+# 4. TİPOGRAFİ
+
+Mevcut projedeki fontları incele.
+
+Özellikle mevcut:
+
+- DM Sans
+- Atkinson Hyperlegible
+- Source Serif 4
+- IBM Plex Mono
+
+fontlarını görevlerine göre değerlendir.
+
+Ana başlıklarda güçlü editoryal tipografi kullan.
+
+Açıklamalarda yüksek okunabilirlik sağla.
+
+Finansal değerlerde, formüllerde, ölçülerde ve tablolarda monospaced tipografi kullan.
+
+Bütün yazıları aynı boyutta yapma.
+
+Büyük başlıklar, kısa yardımcı metinler, küçük teknik etiketler ve büyük hesaplama sonuçları arasında güçlü hiyerarşi oluştur.
+
+# 5. THREE.JS VE GERÇEK 3D
+
+Three.js kullanarak projeye özel 3D görselleştirme sistemi geliştir.
+
+3D sadece dekorasyon olarak kullanılmamalı.
+
+Projenin araçları matematik, ölçüm, zaman, oran, dönüşüm ve hesaplama kavramlarına dayanıyor.
+
+Bunları görsel deneyime dönüştür.
+
+Ana sayfa için fikirler:
+
+- Üç boyutlu geometrik ölçüm sistemleri.
+- Perspektifli ölçüm ızgaraları.
+- Değişen oranları gösteren 3D geometrik objeler.
+- Zaman ve tarih kavramını anlatan hareketli çizgiler.
+- Hesaplama sonuçlarının geometrik temsilleri.
+- Birim dönüşümlerini görselleştiren parametrik yapılar.
+
+Kullanıcı etkileşimleri:
+
+- Mouse ile kontrollü perspektif değişimi.
+- Seçilebilir veri noktaları.
+- Hafif kamera hareketleri.
+- Scroll ile aşamalı sahne dönüşümü.
+- Seçilen hesaplama türüne göre görsel durum değişikliği.
+
+Three.js sahneleri gerçek ürün içeriğiyle ilişkili olmalı.
+
+Rastgele küre, gereksiz parçacık efekti ve anlamsız 3D objeler kullanma.
+
+Mobil cihazlarda sadeleştirilmiş sahne kullan.
+
+WebGL desteklenmediğinde CSS, SVG veya Canvas tabanlı fallback sağla.
+
+# 6. GSAP VE SCROLLTRIGGER ANİMASYON SİSTEMİ
+
+GSAP ve ScrollTrigger ile sayfa bazlı gelişmiş animasyonlar oluştur.
+
+Ana sayfa:
+
+- Hero başlığının kontrollü ortaya çıkışı.
+- Geometrik görsellerin aşamalı oluşması.
+- Ölçüm çizgilerinin çizilmesi.
+- Veri katmanlarının scroll ile görünmesi.
+- Bölümler arası doğal geçişler.
+
+Araç sayfaları:
+
+- Form alanlarının sıralı ortaya çıkması.
+- Sonuç alanının hesaplama sonrası belirginleşmesi.
+- Grafiklerin çizilerek oluşması.
+- Seçeneklerin değişimine uygun mikro animasyonlar.
+
+Eğitim sayfaları:
+
+- Editoryal metin ve görsel geçişleri.
+- Scroll sırasında diyagramların aşamalı görünmesi.
+- Formül ve ölçüm görsellerinin canlanması.
+
+Her sayfanın kendi animasyon karakteri olmalı.
+
+Aynı animasyonu bütün sayfalara uygulama.
+
+Aşırı parallax, sürekli hareket ve gereksiz animasyonlardan kaçın.
+
+prefers-reduced-motion desteğini uygula.
+
+# 7. ANA SAYFA
+
+Ana sayfayı tamamen yeniden tasarla.
+
+Önerilen bölüm mimarisi:
+
+1. Minimal ve premium navigasyon.
+2. Güçlü editoryal hero.
+3. Three.js tabanlı geometrik görselleştirme.
+4. Kullanıcının ihtiyacına göre araç keşfi.
+5. Text, Generators ve Calculators kategorileri.
+6. Öne çıkan araçlar.
+7. Günlük hesaplamaları anlatan interaktif alan.
+8. Popüler araçlar.
+9. Gerçek hesaplama örnekleri.
+10. Gizlilik ve yerel işlemeyi anlatan bölüm.
+11. Eğitim ve öğrenme içerikleri.
+12. About ve Methodology bağlantıları.
+13. Sade ve güçlü footer.
+
+Hero alanı hazır bir SaaS şablonu gibi görünmemeli.
+
+Markanın karakterini taşıyan özgün bir açılış deneyimi oluştur.
+
+# 8. ARAÇ SAYFALARINI TEK TEK YENİDEN TASARLA
+
+Bütün araçları tek bir genel şablona hapsetme.
+
+Ortak tasarım sistemi oluştur ancak araç türüne göre farklı düzenler geliştir.
+
+## Text araçları
+
+Word Counter:
+- Büyük metin editörü.
+- Anlık kelime ve karakter sayıları.
+- Okuma süresi.
+- Satır, paragraf ve cümle sayıları.
+- Sonuçların tipografik sunumu.
+
+Case Converter:
+- Kaynak metin.
+- Dönüşüm seçenekleri.
+- Anlık çıktı.
+- Kolay kopyalama.
+
+Remove Duplicate Lines:
+- Kaynak metin.
+- Tekrarlanan satırların sayısı.
+- Temizlenmiş çıktı.
+- Dönüşüm özeti.
+
+Whitespace Cleaner:
+- Temizleme seçenekleri.
+- Önce/sonra karşılaştırması.
+- Değişikliklerin gösterimi.
+
+Sort Lines:
+- Sıralama seçenekleri.
+- Gerçek sıralama sonuçları.
+- Önce/sonra görünümü.
+
+## Generator araçları
+
+Password Generator:
+- Uzunluk kontrolü.
+- Karakter seçenekleri.
+- Güvenli rastgele üretim.
+- Gerçek entropy tahmini.
+- Sonuç kopyalama.
+
+Passphrase Generator:
+- Kelime sayısı.
+- Ayırıcı seçimi.
+- Güvenli rastgele kelime üretimi.
+
+QR Generator:
+- QR ayarları.
+- Error correction.
+- Gerçek QR önizlemesi.
+- PNG ve SVG indirme.
+
+QR Reader:
+- Görsel yükleme.
+- Kamera izni.
+- Gerçek QR okuma.
+- Okunan içeriği kopyalama.
+
+Barcode Generator:
+- Barkod tipi.
+- İçerik girişi.
+- Canlı önizleme.
+- İndirme.
+
+## Calculator araçları
+
+Unit Converter:
+- Kaynak ve hedef birim.
+- Kategori seçimi.
+- Gerçek dönüşüm sonucu.
+
+Percentage Calculator:
+- Dört hesaplama modu.
+- Formül açıklaması.
+- Büyük ve okunabilir sonuçlar.
+
+Age Calculator:
+- Tarih girişi.
+- Takvim bazlı yaş.
+- Yıl, ay ve gün sonuçları.
+
+Date Difference:
+- İki tarih.
+- Gün farkı.
+- Inclusive / exclusive hesaplama.
+
+Time Duration:
+- Zaman girişleri.
+- Süre hesaplama.
+- Saat, dakika ve saniye sonuçları.
+
+Discount Calculator:
+- İlk fiyat.
+- İndirim yüzdesi.
+- İndirim miktarı.
+- Son fiyat.
+
+Tip & Bill Split:
+- Fatura tutarı.
+- Bahşiş oranı.
+- Kişi sayısı.
+- Kişi başı ödeme.
+
+Compound Interest:
+- Ana para.
+- Faiz oranı.
+- Süre.
+- Bileşik dönem.
+- Gerçek büyüme grafiği.
+
+Loan / EMI:
+- Kredi tutarı.
+- Faiz oranı.
+- Vade.
+- Aylık ödeme.
+- Toplam faiz.
+- Amortisman tablosu.
+
+Aspect Ratio:
+- Genişlik ve yükseklik.
+- Oran hesaplama.
+- Görsel oran önizlemesi.
+
+Bütün hesaplamalar mevcut gerçek hesaplama motorlarıyla çalışmalı.
+
+Gerçek sonuç yerine statik demo gösterme.
+
+# 9. KATEGORİ VE DİĞER SAYFALAR
+
+Şu sayfaların tamamını yeniden tasarla:
+
+- Homepage
+- Tools
+- All Tools
+- Popular
+- Text Category
+- Generators Category
+- Calculators Category
+- Training
+- Training makaleleri
+- Her araca özel Training sayfaları
+- About
+- Methodology
+- How local processing works
+- Privacy
+- Legal Privacy
+- Legal Terms
+- Contact
+- Changelog
+- 404
+
+Kategori sayfalarında araçları anlamlı biçimde gruplandır.
+
+Eğitim sayfalarını sıradan blog yazısı görünümüne hapsetme.
+
+Editoryal tipografi, açıklamalı diyagramlar, formüller, örnekler ve ilgili araçlara bağlantılar kullan.
+
+Methodology ve How local processing works sayfalarını teknik açıdan güven veren tasarıma dönüştür.
+
+Mevcut içeriklerin doğruluğunu ve anlamını koru.
+
+Hiçbir mevcut URL'yi kaldırma.
+
+# 10. UNSPLASH VE GÖRSEL KULLANIMI
+
+Unsplash görsellerini yalnızca gerçekten değer kattıkları editoryal alanlarda kullan.
+
+Her bölüme rastgele fotoğraf ekleme.
+
+Hesaplama araçlarının merkezinde fotoğraf değil, araç ve gerçek sonuç bulunmalı.
+
+Fotoğraf kullanılan alanlarda:
+
+- İçeriğe uygun görsel seç.
+- Responsive kırpma uygula.
+- Lazy loading kullan.
+- Alt metin ekle.
+- Görsel yüklenmezse fallback sağla.
+
+3D görseller ana sayfanın ve matematiksel anlatımların merkezinde olmalı.
+
+# 11. NAVİGASYON VE ARAÇ ARAMA
+
+Mevcut navigasyon ve arama sistemini geliştir.
+
+Araç araması:
+
+- Anlık sonuç üretmeli.
+- Kategoriye göre filtrelemeli.
+- Klavye ile kullanılabilmeli.
+- Mobilde çalışmalı.
+- İlgili araca doğru yönlendirmeli.
+
+Araçlar arasında mantıklı bağlantılar kur.
+
+Örneğin bir hesaplama aracından ilgili eğitim içeriğine ve benzer hesaplama aracına ulaşılabilmeli.
+
+# 12. RESPONSIVE VE ERİŞİLEBİLİRLİK
+
+360, 390, 430, 768, 1024, 1280, 1440 ve 1920 px genişliklerinde kontrol yap.
+
+Mobilde:
+
+- Formlar dikey akmalı.
+- Sonuçlar kolay okunmalı.
+- Grafikler taşmamalı.
+- QR ve barkod araçları kullanılabilir kalmalı.
+- Navigasyon dokunmatik olmalı.
+- 3D sahneler hafifletilmeli.
+- Animasyonlar azaltılmalı.
+
+Keyboard navigation, focus görünürlüğü, semantic HTML ve erişilebilir kontrast zorunlu.
+
+# 13. TEKNİK UYGULAMA
+
+Öncelikle gerçek kaynak kodunu ve proje yapısını incele.
+
+Verilen arşivde Astro tabanlı statik build çıktısı, derlenmiş JavaScript, CSS ve asset dosyaları bulunmaktadır.
+
+Bunları doğrudan kaynak kod olarak varsayma.
+
+Gerçek kaynak repository mevcutsa orada çalış.
+
+Yalnızca statik çıktı mevcutsa kaynak kod eksikliğini açıkça belirt ve sürdürülebilir uygulama mimarisini buna göre planla.
+
+Mevcut fonksiyonları bozma.
+
+Three.js ve GSAP entegrasyonunu proje teknolojisine uygun gerçekleştir.
+
+Gereksiz bağımlılıklar ekleme.
+
+SEO, performans, erişilebilirlik ve Core Web Vitals kontrollerini yap.
+
+# 14. GERÇEK TESTLER
+
+Şunları test et:
+
+- Tüm mevcut sayfalar ve rotalar.
+- 20 aracın tamamı.
+- Bütün butonlar.
+- Bütün form alanları.
+- Hesaplama sonuçları.
+- QR oluşturma ve okuma.
+- Barkod oluşturma.
+- Parola üretimi.
+- Metin dönüşümleri.
+- Kopyalama ve indirme.
+- Arama ve navigasyon.
+- Training bağlantıları.
+- 3D sahneler.
+- GSAP animasyonları.
+- Mobil ekranlar.
+- WebGL fallback.
+- Reduced motion.
+- Konsol hataları.
+- Kırık görseller ve bağlantılar.
+
+Gerçek test yapmadan hiçbir özelliği başarılı olarak işaretleme.
+
+# SON TALİMAT
+
+Bu web sitesini sıradan bir araç koleksiyonu olmaktan çıkar.
+
+Kullanıcıya küçük işlerin hızlı, güvenilir ve keyifli biçimde tamamlandığı premium bir dijital araç deneyimi sun.
+
+Görsel karakteri sıcak, editoryal, minimal ve geometrik olmalı.
+
+Three.js ile matematiksel ve geometrik görselleştirmeler oluştur.
+
+GSAP ve ScrollTrigger ile sayfaya özgü animasyonlar geliştir.
+
+Bütün sayfaları ayrı ayrı tasarla.
+
+Mevcut araçların işlevlerini koru.
+
+Sadece plan sunma. Gerçek dosyalarda değişiklik yap, projeyi çalıştır, test et ve tamamlanan işleri raporla.

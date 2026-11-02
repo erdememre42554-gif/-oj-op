@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://daygrid.app/training/</loc><priority>0.8</priority></url>
+  <url><loc>https://daygrid.app/training/apr-and-amortisation/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/decimal-vs-binary-units/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/password-or-passphrase/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/password-randomness-vs-looks/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/percentage-change-vs-points/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/qr-error-correction-and-sizing/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/static-qr-privacy/</loc><lastmod>2026-09-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://daygrid.app/training/tool/word-counter/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/case-converter/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/remove-duplicate-lines/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/whitespace-cleaner/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/sort-lines/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/password-generator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/passphrase-generator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/qr-generator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/qr-reader/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/barcode-generator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/unit-converter/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/percentage-calculator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/age-calculator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/date-difference/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/time-duration/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/discount-calculator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/tip-calculator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/loan-calculator/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/compound-interest/</loc><priority>0.5</priority></url>
+  <url><loc>https://daygrid.app/training/tool/aspect-ratio/</loc><priority>0.5</priority></url>
+</urlset>

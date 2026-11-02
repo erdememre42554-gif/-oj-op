@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# No crawl-delay: the site is static and cheap to serve.
+Sitemap: https://daygrid.app/sitemap-index.xml
