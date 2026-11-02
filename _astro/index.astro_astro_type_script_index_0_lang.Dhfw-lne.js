@@ -1,0 +1,64 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/browser.V52HDjTG.js","_astro/gen.YZE6N51C.js","_astro/shell.CAx-kq-g.js","_astro/preload-helper.DHhhL8Zf.js"])))=>i.map(i=>d[i]);
+import{a as e,c as t,i as n,n as r,t as i}from"./gen.YZE6N51C.js";import{t as a}from"./analytics.SN7n5UGn.js";import{t as o}from"./preload-helper.DHhhL8Zf.js";import{a as s,i as c,n as l,o as u,r as d}from"./calc.CnoNqhh5.js";var f=(e,t=document)=>t.querySelector(e),p=(e,t=document)=>Array.from(t.querySelectorAll(e)),m=()=>window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;function h(){let e=f(`#hero-q`),t=f(`#hero-suggest`),n=f(`#dg-tool-index`);if(!e||!t||!n)return;let r=[];try{r=JSON.parse(n.textContent||`[]`)}catch{r=[]}let i=-1;function a(e){t.innerHTML=``,i=-1,e.length?(e.slice(0,6).forEach(e=>{let n=document.createElement(`li`),r=document.createElement(`a`);r.href=`/tools/${e.id}/`,r.dataset.tool=e.id,r.innerHTML=`<span class="ta__name">${e.name}</span><span class="ta__cat">${e.catName}</span>`,n.append(r),t.append(n)}),t.hidden=!1):t.hidden=!0}function o(e){let t=e.trim().toLowerCase();if(!t)return a([]);let n=t.split(/\s+/);a(r.map(e=>{let t=`${e.name} ${e.tag} ${e.kw} ${e.catName}`.toLowerCase();if(!n.every(e=>t.includes(e)))return{tool:e,score:-1};let r=0;for(let t of n)e.name.toLowerCase().includes(t)&&(r+=4),e.kw.includes(t)&&(r+=2),r+=1;return{tool:e,score:r}}).filter(e=>e.score>=0).sort((e,t)=>t.score-e.score).map(e=>e.tool))}e.addEventListener(`input`,()=>o(e.value)),e.addEventListener(`focus`,()=>{e.value.trim()&&o(e.value)}),e.addEventListener(`keydown`,e=>{let n=p(`a`,t);if(e.key===`ArrowDown`&&n.length)e.preventDefault(),i=(i+1)%n.length,n.forEach((e,t)=>e.setAttribute(`aria-selected`,String(t===i))),n[i].scrollIntoView({block:`nearest`});else if(e.key===`ArrowUp`&&n.length)e.preventDefault(),i=(i-1+n.length)%n.length,n.forEach((e,t)=>e.setAttribute(`aria-selected`,String(t===i)));else if(e.key===`Enter`){let t=n[i]||n[0];t&&(e.preventDefault(),location.href=t.href)}else e.key===`Escape`&&(t.hidden=!0)}),document.addEventListener(`click`,n=>{!t.hidden&&!t.contains(n.target)&&n.target!==e&&(t.hidden=!0)})}var g={words:{title:`Count words`,tool:`word-counter`},tip:{title:`Calculate a tip`,tool:`tip-calculator`},units:{title:`Convert units`,tool:`unit-converter`},qr:{title:`Make a QR code`,tool:`qr-generator`},password:{title:`Generate a password`,tool:`password-generator`},percent:{title:`Work out a percentage`,tool:`percentage-calculator`}};function _(){let a=f(`#ws-body`),c=f(`#ws-title`),l=f(`#ws-open`);if(!a||!c)return;let m=`words`,h=0,_=``;function v(){a.innerHTML=`
+      <label class="ws__label" for="ws-words">Your text</label>
+      <textarea id="ws-words" class="ws__input" rows="4" placeholder="Paste a paragraph…"></textarea>
+      <p class="ws__out" aria-live="polite"><b id="ws-words-n">0</b> words · <b id="ws-words-c">0</b> characters</p>`;let e=f(`#ws-words`),t=f(`#ws-words-n`),n=f(`#ws-words-c`),r=()=>{let r=e.value;t.textContent=String(r.trim().split(/\s+/).filter(Boolean).length),n.textContent=String(Array.from(r).length)};e.addEventListener(`input`,r),r(),e.focus()}function y(){a.innerHTML=`
+      <div class="ws__row">
+        <label class="ws__label" for="ws-bill">Bill</label>
+        <input id="ws-bill" class="ws__input" type="number" value="86.40" step="0.01" min="0" />
+      </div>
+      <div class="ws__row">
+        <label class="ws__label" for="ws-tip">Tip %</label>
+        <input id="ws-tip" class="ws__input" type="number" value="12" step="1" min="0" />
+      </div>
+      <div class="ws__row">
+        <label class="ws__label" for="ws-people">People</label>
+        <input id="ws-people" class="ws__input" type="number" value="3" step="1" min="1" max="50" />
+      </div>
+      <p class="ws__out" aria-live="polite"><b id="ws-tip-out">—</b> per person</p>`;let e=f(`#ws-bill`),t=f(`#ws-tip`),n=f(`#ws-people`),r=f(`#ws-tip-out`),i=()=>{let i=u({bill:Number(e.value),tipPercent:Number(t.value),people:Number(n.value)});r.textContent=i?i.perPerson.toFixed(2):`—`};[e,t,n].forEach(e=>e.addEventListener(`input`,i)),i()}function b(){a.innerHTML=`
+      <div class="ws__row">
+        <label class="ws__label" for="ws-value">Value</label>
+        <input id="ws-value" class="ws__input" type="number" value="5" step="any" />
+      </div>
+      <div class="ws__row">
+        <label class="ws__label" for="ws-from">From</label>
+        <select id="ws-from" class="ws__input">
+          <option value="ft">Feet</option>
+          <option value="in">Inches</option>
+          <option value="m">Metres</option>
+          <option value="mi">Miles</option>
+          <option value="kg">Kilograms</option>
+          <option value="lb">Pounds</option>
+        </select>
+      </div>
+      <div class="ws__row">
+        <label class="ws__label" for="ws-to">To</label>
+        <select id="ws-to" class="ws__input">
+          <option value="cm">Centimetres</option>
+          <option value="m">Metres</option>
+          <option value="in">Inches</option>
+          <option value="ft">Feet</option>
+          <option value="kg">Kilograms</option>
+          <option value="lb">Pounds</option>
+        </select>
+      </div>
+      <p class="ws__out" aria-live="polite"><b id="ws-unit-out">—</b></p>`;let e=f(`#ws-value`),t=f(`#ws-from`),n=f(`#ws-to`),r=f(`#ws-unit-out`),i=e=>[`kg`,`lb`].includes(e)?`mass`:`length`,o=()=>{let a=t.value,o=n.value;if(i(a)!==i(o)){r.textContent=`Pick units from the same category.`;return}let s=d(Number(e.value),i(a),a,o);r.textContent=`${Number(e.value)} ${a} = ${Number(s.toPrecision(8))} ${o}`};[e,t,n].forEach(e=>e.addEventListener(`input`,o)),o()}function x(){a.innerHTML=`
+      <label class="ws__label" for="ws-qr-text">Payload</label>
+      <input id="ws-qr-text" class="ws__input" type="text" value="https://daygrid.app" />
+      <div class="ws__qr"><canvas id="ws-qr-canvas" width="180" height="180" aria-label="Live QR preview"></canvas></div>
+      <p class="ws__hint">Encoded in this tab. No image is uploaded or fetched.</p>`;let e=f(`#ws-qr-text`),n=f(`#ws-qr-canvas`),r=async()=>{e.value.trim()&&await(await o(async()=>{let{default:e}=await import(`./browser.V52HDjTG.js`).then(e=>t(e.default,1));return{default:e}},__vite__mapDeps([0,1,2,3]))).default.toCanvas(n,e.value,{width:180,margin:2,errorCorrectionLevel:`M`})};e.addEventListener(`input`,()=>{clearTimeout(h),h=window.setTimeout(r,180)}),r()}function S(){a.innerHTML=`
+      <div class="ws__row">
+        <label class="ws__label" for="ws-pw-len">Length</label>
+        <input id="ws-pw-len" class="ws__input" type="number" value="20" min="8" max="128" step="1" />
+      </div>
+      <p class="ws__pw" id="ws-pw-out">—</p>
+      <p class="ws__hint" id="ws-pw-meta"></p>`;let t=f(`#ws-pw-len`),o=f(`#ws-pw-out`),s=f(`#ws-pw-meta`),c=i.lower+i.upper+i.digits+i.symbols,l=()=>{let a=Math.max(8,Math.min(128,Number(t.value)||20)),l=Array.from({length:a},()=>n([...c]));[i.lower,i.upper,i.digits,i.symbols].forEach((e,t)=>{l[t]=n([...e])});for(let t=l.length-1;t>0;--t){let n=e(t+1);[l[t],l[n]]=[l[n],l[t]]}_=l.join(``),o.textContent=_,s.textContent=`${a} characters · ${r(c.length,a).toFixed(1)} bits from crypto.getRandomValues`};t.addEventListener(`input`,l),l()}function C(){a.innerHTML=`
+      <div class="ws__row">
+        <label class="ws__label" for="ws-pct">Percent</label>
+        <input id="ws-pct" class="ws__input" type="number" value="18" step="0.5" />
+      </div>
+      <div class="ws__row">
+        <label class="ws__label" for="ws-of">Of</label>
+        <input id="ws-of" class="ws__input" type="number" value="240" step="any" />
+      </div>
+      <p class="ws__out" aria-live="polite"><b id="ws-pct-out">—</b></p>`;let e=f(`#ws-pct`),t=f(`#ws-of`),n=f(`#ws-pct-out`),r=()=>{let r=s(Number(e.value),Number(t.value));n.textContent=Number.isFinite(r)?String(Number(r.toPrecision(8))):`—`};[e,t].forEach(e=>e.addEventListener(`input`,r)),r()}let w={words:v,tip:y,units:b,qr:x,password:S,percent:C};function T(e){w[e]&&(m=e,c.textContent=g[e].title,l&&(l.href=`/tools/${g[e].tool}/`),p(`[data-ws]`).forEach(t=>{let n=t.dataset.ws===e;t.classList.toggle(`is-on`,n),t.setAttribute(`aria-pressed`,String(n))}),w[e]())}p(`[data-ws]`).forEach(e=>e.addEventListener(`click`,()=>T(e.dataset.ws))),T(m)}function v(){let e=f(`#r-pct`),n=f(`#r-of`),r=f(`#r-pct-out`);if(e&&n&&r){let t=()=>{let t=s(Number(e.value),Number(n.value));r.textContent=Number.isFinite(t)?String(Number(t.toPrecision(8))):`—`};[e,n].forEach(e=>e.addEventListener(`input`,t)),t()}let i=f(`#r-unit`),a=f(`#r-unit-from`),c=f(`#r-unit-out`);if(i&&a&&c){let e=()=>{let e=Number(i.value);if(!Number.isFinite(e)){c.textContent=`—`;return}let t=a.value===`lb`?`mass`:`length`,n=a.value===`lb`?`kg`:`in`;c.textContent=`${Number(d(e,t,a.value,n).toPrecision(6))} ${n}`};[i,a].forEach(t=>t.addEventListener(`input`,e)),e()}let l=f(`#r-time-a`),u=f(`#r-time-b`),p=f(`#r-time-out`);if(l&&u&&p){let e=()=>{let e=e=>{let t=/^(\d{1,2}):(\d{2})$/.exec(e);return t?Number(t[1])*60+Number(t[2]):null},t=e(l.value),n=e(u.value);if(t===null||n===null){p.textContent=`—`;return}let r=n-t;r<0&&(r+=1440),p.textContent=`${Math.floor(r/60)} h ${String(r%60).padStart(2,`0`)} min`};[l,u].forEach(t=>t.addEventListener(`input`,e)),e()}let m=f(`#r-qr-text`),h=f(`#r-qr`);if(m&&h){let e=0,n=async()=>{m.value.trim()&&await(await o(async()=>{let{default:e}=await import(`./browser.V52HDjTG.js`).then(e=>t(e.default,1));return{default:e}},__vite__mapDeps([0,1,2,3]))).default.toCanvas(h,m.value,{width:132,margin:2,errorCorrectionLevel:`L`})};m.addEventListener(`input`,()=>{clearTimeout(e),e=window.setTimeout(n,200)}),n()}}function y(){let e=f(`#popular-list`);if(!e)return;let t={};try{t=a()}catch{t={}}let n=t.tool_open?.byTool||{};if(!Object.keys(n).length)return;let r=p(`li`,e);r.sort((e,t)=>{let r=n[e.dataset.tool]||0;return(n[t.dataset.tool]||0)-r}),r.forEach(t=>e.append(t));let i=f(`#popular-note`);i&&(i.textContent=`Ordered by opens counted on this device only. Nobody else's activity is visible.`)}function b(){let e=f(`#qr-growth`),n=f(`#qr-replay`);if(!e)return;let r=e.getContext(`2d`),i=null,a=0;async function s(){i=(await o(async()=>{let{default:e}=await import(`./browser.V52HDjTG.js`).then(e=>t(e.default,1));return{default:e}},__vite__mapDeps([0,1,2,3]))).default.create(`https://daygrid.app/tools/qr-generator/`,{errorCorrectionLevel:`M`}).modules,a=i.size}function c(t){if(!i||!r)return;let n=a+4,o=e.width/n;r.fillStyle=`#faf7f0`,r.fillRect(0,0,e.width,e.height);let s=[];for(let e=0;e<a;e+=1)for(let t=0;t<a;t+=1)i.get(t,e)&&s.push([t,e,(t+e)/(a*2)]);r.fillStyle=`#1a201d`;for(let[e,n,i]of s)i>t||r.fillRect((e+2)*o,(n+2)*o,Math.ceil(o),Math.ceil(o))}function l(){let e=performance.now(),t=n=>{let r=Math.min(1,(n-e)/900);c(r),r<1&&requestAnimationFrame(t)};requestAnimationFrame(t)}async function u(){i||await s(),m()?c(1):l()}if(`IntersectionObserver`in window&&!m()){let t=new IntersectionObserver(e=>{for(let n of e)n.isIntersecting&&(u(),t.disconnect())},{threshold:.35});t.observe(e)}else u();n?.addEventListener(`click`,()=>{c(0),u()})}function x(){let t=f(`#pw-demo-out`),a=f(`#pw-demo-meta`),o=f(`#pw-demo-gen`),s=f(`#pw-demo-len`);if(!t||!o)return;let c=i.lower+i.upper+i.digits+i.symbols;function l(){let o=Math.max(12,Math.min(48,Number(s?.value)||24)),l=Array.from({length:o},()=>n([...c]));[i.lower,i.upper,i.digits,i.symbols].forEach((e,t)=>{l[t]=n([...e])});for(let t=l.length-1;t>0;--t){let n=e(t+1);[l[t],l[n]]=[l[n],l[t]]}t.textContent=l.join(``),a&&(a.textContent=`${o} characters · ${r(c.length,o).toFixed(1)} bits · drawn from crypto.getRandomValues`)}o.addEventListener(`click`,l),s?.addEventListener(`input`,l),l()}function S(){let e=f(`#board`);if(!e)return;let t=p(`[data-board-tab]`,e),n=p(`[data-board-panel]`,e);t.forEach(e=>e.addEventListener(`click`,()=>{let r=e.dataset.boardTab;t.forEach(t=>{let n=t===e;t.setAttribute(`aria-selected`,String(n)),t.classList.toggle(`is-on`,n)}),n.forEach(e=>{e.hidden=e.dataset.boardPanel!==r})}));let r=f(`#b-pct`),i=f(`#b-of`),a=f(`#b-pct-out`);if(r&&i&&a){let e=()=>{let e=s(Number(r.value),Number(i.value));a.textContent=Number.isFinite(e)?String(Number(e.toPrecision(8))):`—`};[r,i].forEach(t=>t.addEventListener(`input`,e)),e()}let o=f(`#b-loan-p`),u=f(`#b-loan-r`),d=f(`#b-loan-y`),m=f(`#b-loan-out`);if(o&&u&&d&&m){let e=()=>{let e=c(Number(o.value),Number(u.value),Number(d.value));m.textContent=e===null?`—`:e.toFixed(2)};[o,u,d].forEach(t=>t.addEventListener(`input`,e)),e()}let h=f(`#b-ci-p`),g=f(`#b-ci-r`),_=f(`#b-ci-y`),v=f(`#b-ci-out`);if(h&&g&&_&&v){let e=()=>{let e=l({principal:Number(h.value),annualRatePct:Number(g.value),years:Number(_.value),frequency:12,monthlyContribution:0});v.textContent=e?e.balance.toFixed(2):`—`};[h,g,_].forEach(t=>t.addEventListener(`input`,e)),e()}}function C(){h(),_(),v(),y(),b(),x(),S()}C();
